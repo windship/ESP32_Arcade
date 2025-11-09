@@ -31,4 +31,28 @@ SPI.h<br>
 vector<br>
 algorithm<br>
 
+<h2>Connection</h2>
+<b>* ESP32-S3-Zero --> TFT LCD<br></b>
+&nbsp;&nbsp;&nbsp;cfg.pin_sclk = 13; // SCL<br>
+&nbsp;&nbsp;&nbsp;cfg.pin_mosi = 12; // SCA<br>
+&nbsp;&nbsp;&nbsp;cfg.pin_rst = 11; // RES<br>
+&nbsp;&nbsp;&nbsp;cfg.pin_dc = 10;<br>
+&nbsp;&nbsp;&nbsp;cfg.spi_mode = 3;<br>
+&nbsp;&nbsp;&nbsp;BLK : not necessary to connect<br>
+&nbsp;&nbsp;&nbsp;miso, cs, busy : set to -1<br>
+<br>
+<b>* ESP32-S3-Zero --> MAX98357A<br></b>
+&nbsp;&nbsp;&nbsp;LRC = 9<br>
+&nbsp;&nbsp;&nbsp;BCLK = 8<br>
+&nbsp;&nbsp;&nbsp;DIN = 7<br>
+&nbsp;&nbsp;&nbsp;GAIN -> GND<br>
+&nbsp;&nbsp;&nbsp;SD -> VIN<br>
+<br>
+<b>* ESP32-S3-Zero --> SD card module<br></b>
+&nbsp;&nbsp;&nbsp;SD_CS = 4<br>
+&nbsp;&nbsp;&nbsp;SD_MOSI = 3<br>
+&nbsp;&nbsp;&nbsp;SD_CLK = 2<br>
+&nbsp;&nbsp;&nbsp;SD_MISO = 1<br>
+   
+
 
