@@ -54,5 +54,16 @@ algorithm<br>
 &nbsp;&nbsp;&nbsp;SD_CLK = 2<br>
 &nbsp;&nbsp;&nbsp;SD_MISO = 1<br>
    
+<h2>Encoding</h2>
+<b>* Video<br></b>
+ffmpeg -i input.mp4 -vf "crop=960:672:160:24,scale=240:168,setpts=0.675*PTS,fps=15" -c:v rawvideo -pix_fmt rgb565 -f rawvideo output.raw
+&nbsp;&nbsp;&nbsp;crop=960:672:160:24 -> Video crop
+&nbsp;&nbsp;&nbsp;scale=240:168 -> Video resize
+&nbsp;&nbsp;&nbsp;setpts=0.675*PTS,fps=15 -> Optimize for ESP32 playback performance
+
+<b>* Audio<br></b>
+ffmpeg -i source.mp4 -vn -acodec pcm_s16le -ar 22050 -ac 1 -t 10.0 -filter:a "volume=2.0" output.wav
+
+
 
 
