@@ -1,6 +1,7 @@
 <h1>ESP32_Arcade</h1>
 <img width="50%" height="50%" alt="01" src="https://github.com/user-attachments/assets/de96fb38-01c5-4426-aec2-3c4426ddab72"><img width="50%" height="50%" alt="02" src="https://github.com/user-attachments/assets/05a892e8-6db8-4fbd-9bed-10b650cca896">
-<br>
+<br><br>
+<a href="https://www.youtube.com/watch?v=fJBKEIoOSjI" target="_blank"><img src="https://img.youtube.com/vi/fJBKEIoOSjI/0.jpg"></a></br>
 Tiny capsule toy of Japanese arcade game cabinet that showing intro movies.
 
 Can play many movies you want with SD card storage!<br><br>
